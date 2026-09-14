@@ -2,7 +2,8 @@
 
 Queue a feature. An agent isolates, builds, proves, opens a PR with
 evidence, and lands it when review is clean. Visual design is out of
-scope here.
+scope here — use [Impeccable](https://impeccable.style/) and this app's
+`DESIGN.md` / `PRODUCT.md`.
 
 A software factory is the workflows, skills, and domain knowledge — not a
 new harness. This stamp comes from [aaronte/atelier](https://github.com/aaronte/atelier)

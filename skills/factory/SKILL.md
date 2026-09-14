@@ -28,8 +28,8 @@ command. This app's queue, invariants, and `/verify-<app>` still
 govern.
 
 Visual design / taste passes are out of scope for the factory. Do not
-route to a design playbook. If the request is only visual, say so and
-stop.
+route to a design playbook. If the request is only visual, point at
+Impeccable (`DESIGN.md` / `PRODUCT.md` in the app) and stop.
 
 ## First todos (mandatory)
 

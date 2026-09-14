@@ -11,11 +11,13 @@ Three layers. Three public sources.
 
 | Layer | Source | What it is for |
 | --- | --- | --- |
-| Skills | [Hallmark](https://www.usehallmark.com/) | Design that refuses to look generated. |
+| Design | [Impeccable](https://impeccable.style/) | Design system–aware anti-slop; polish + `DESIGN.md`. |
 | Motion | [transitions.dev](https://transitions.dev/) | Motion as a skill, not decoration. |
 | Lint | [shadcn/lint](https://github.com/shadcn-ui/lint) | Rules an agent can verify and fix. |
 
 Taste lives in the skill. Motion lives in the transition. Enforcement lives in the linter.
+
+[Hallmark](https://www.usehallmark.com/) is optional — a fresh fingerprint for greenfield marketing pages. Not the Atelier default.
 
 ## How other repos use this
 
@@ -70,18 +72,28 @@ Strict by default. See [`packages/tsconfig/README.md`](packages/tsconfig/README.
 
 ### Coming later
 
-A design skill (Hallmark-shaped). `@aaronte/ui` when two or more apps share a component. Neither ships as an empty folder.
+`@aaronte/ui` when two or more apps share a component. No empty folder until then.
+
+The default design skill is [Impeccable](https://impeccable.style/). Require it like pstack — do not vendor it here. Apps keep their own `DESIGN.md` and `PRODUCT.md`. Atelier may add thin overlays later. It will not ship a hollow design stub.
 
 ## Software factory
 
-The same isolate → build → prove → review → land loop in every app. Atelier owns the generic skills. Each app owns its queue, invariants, and `verify-<app>` map.
+The same isolate → build → prove → review → land loop in every app. Atelier owns the factory and shared configs. Each app owns its queue, invariants, `verify-<app>` map, and design docs.
 
-### 1. Cursor plugin
+### 1. Require pstack and Impeccable
+
+Do not vendor either into this repo.
 
 ```text
 /add-plugin pstack
 /setup-pstack
 ```
+
+```bash
+npx impeccable install
+```
+
+Then `/impeccable init` in the app so `DESIGN.md` and `PRODUCT.md` live there. [Hallmark](https://www.usehallmark.com/) only if a greenfield marketing page needs a new fingerprint.
 
 ### 2. Install Atelier skills
 
@@ -115,7 +127,7 @@ Rename the verify stub to `verify-<app>`. Fill launch, doctor, drive, and the fe
 | --- | --- |
 | `factory` hub + playbooks | Live `factory/queue.md` |
 | `factory-isolate` / `build` / `prove` / `review` / `land` | `verify-<app>` + feature maps |
-| Queue skeleton, factory rules, pstack reviewer panel | `AGENTS.md` invariants |
+| Queue skeleton, factory rules, pstack reviewer panel | `AGENTS.md` invariants, `DESIGN.md`, `PRODUCT.md` |
 | Shared ESLint + tsconfig | Package manager, check scripts, ports, product code |
 
 Reviews use Gemini 3.8 Flash on the interrogate panel (`templates/.cursor/rules/pstack-models.mdc`). Implementation models stay on pstack defaults.
@@ -132,7 +144,7 @@ This repo stays public. If it cannot live in the open, it does not belong here.
 
 ## Roadmap
 
-- Design skill — Hallmark-shaped, when the rule-set is real
+- Thin design overlays on top of Impeccable, if a note earns a place
 - Shipping checklist skill
 - ESLint rules that grow toward [shadcn/lint](https://github.com/shadcn-ui/lint)
 - Motion notes drawn from [transitions.dev](https://transitions.dev/)

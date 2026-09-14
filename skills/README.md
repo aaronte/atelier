@@ -20,7 +20,7 @@ Install one skill:
 npx skills add aaronte/atelier --skill factory
 ```
 
-A design skill is upcoming. It is not in this repo yet.
+Design is [Impeccable](https://impeccable.style/). Require it like pstack (`npx impeccable install`). Do not vendor it here. Apps keep `DESIGN.md` and `PRODUCT.md`. [Hallmark](https://www.usehallmark.com/) is optional for greenfield marketing pages — not the default.
 
 ## Skills in this repo
 

@@ -16,3 +16,5 @@ enters the software factory. Do not treat it as a freeform chat.
 4. This app's queue, invariants, and `/verify-<app>` still govern.
 
 Visual design polish is out of scope unless the user asked for it.
+Then use Impeccable and this app's DESIGN.md / PRODUCT.md. Do not
+vendor Impeccable into Atelier.
