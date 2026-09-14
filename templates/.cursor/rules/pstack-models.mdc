@@ -1,0 +1,18 @@
+---
+description: pstack per-role model choices (overrides skill defaults)
+alwaysApply: true
+---
+
+# pstack model configuration
+
+One line per role. Delete a line to fall back to the skill default.
+`inherit-parent` or `auto` as a value: the role runs on the parent chat
+model (omit Task `model`). Alias entries in a panel list still count
+toward its fan-out.
+
+Only the interrogate reviewers panel is pinned here. Other roles keep
+their skill defaults so implementation and code models stay unchanged.
+
+# Reviewers: Gemini 3.8 Flash replaces Claude Fable 5.1 Max.
+# Other panel seats stay as the pstack defaults.
+interrogate reviewers: gemini-3.8-flash, gpt-5.6-sol-max, grok-4.6-fast-xhigh, claude-opus-5-thinking-xhigh
