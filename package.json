@@ -1,0 +1,9 @@
+{
+  "name": "atelier",
+  "private": true,
+  "license": "MIT",
+  "description": "A public taste library — agent skills, shared configs, and UI practices.",
+  "workspaces": [
+    "packages/*"
+  ]
+}

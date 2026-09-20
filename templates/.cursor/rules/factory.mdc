@@ -1,0 +1,19 @@
+---
+description: Assigned work enters the software factory and poteto-mode
+alwaysApply: true
+---
+
+# Factory + poteto-mode
+
+Assigned work (Linear, cloud agent, @Cursor, `/factory`, `/poteto-mode`)
+enters the software factory. Do not treat it as a freeform chat.
+
+1. Read `AGENTS.md` and `.cursor/skills/factory/SKILL.md`.
+2. Claim or append `factory/queue.md` before editing product code.
+   Include the Linear id when the prompt has one.
+3. Write a checkable `done when`. Then read pstack `poteto-mode` and
+   follow it. Use `subagent_type: "poteto-agent"` for playbook delegates.
+4. This app's queue, invariants, and `/verify-<app>` still govern.
+
+Visual design polish is out of scope unless the user asked for it.
+Then use Hallmark. Do not vendor Hallmark into Atelier.

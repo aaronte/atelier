@@ -1,0 +1,20 @@
+{
+  "name": "@aaronte/tsconfig",
+  "version": "0.0.0",
+  "description": "Atelier strict TypeScript bases.",
+  "license": "MIT",
+  "files": [
+    "base.json"
+  ],
+  "exports": {
+    "./base.json": "./base.json"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aaronte/atelier.git",
+    "directory": "packages/tsconfig"
+  }
+}
